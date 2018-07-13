@@ -32,7 +32,7 @@ describe('closures', function() {
   })
 
   describe('createDriver', function(){
-    let Driver = createDriver();
+    const Driver = createDriver();
 
     it('returns a class that allows us to create a driver with a name attribute', function(){
       expect(new Driver('Sam').name).to.equal('Sam')
